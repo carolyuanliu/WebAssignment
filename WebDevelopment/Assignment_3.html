@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	 <title> UCC Computer Science Student </title>
+<!--STYLE-->
+   <style>
+
+    .nav{
+        background-color: #023774;
+        position:fixed;
+        height:6ex;
+        width:100%;
+        top: 0px;
+      }
+
+      .nav a{
+        float:left;
+        color:#F2F2F2;
+        text-align: center;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 120%;
+        padding: 12px 20px;
+      }
+      .nav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+    .emp{
+       font: bold Arial, sans-serif;
+       color:#0a6fad;
+      }
+
+     }
+      h1{
+        font-family: verdana;
+        margin-left: 4em;
+        text-align: right;
+        width: 3em;
+      }
+      p{
+        text-align: left;
+        font-family: Helvetica;
+        font-size: 120%;
+        margin:auto;
+        margin-right: 100px;
+      }
+
+      table {
+       border-collapse: collapse;
+       font-family: Helvetica;
+       font-size: 100%;
+       text-align:center;
+       margin: auto;
+     }
+     td, th {
+        border: 1px solid #cccccc;
+        font-family: Helvetica;
+        font-size: 100%;
+        text-align: left;
+        padding: 8px;
+        }
+     tr:nth-child(even) {
+    background-color: #dddddd;
+     }
+     th {
+       font-size: 120%;
+     }
+     .highlight:hover {
+   color: #FE8200;
+     }
+
+    .logo{
+      width:15%; margin-right: 20px;
+      float: left;
+    }
+    .flag_logo{
+      width:4%;
+      margin-top: 20px;
+
+
+    }
+    .centre{
+      text-align:center;
+      margin:30px;
+    }
+    #Aboutme, #ClassTable, #LabTable, #MyHome, #OtherPhoto,#Search{
+      padding-top: 60px;
+
+    }
+    .imgWidth{
+      width: 60%
+    }
+
+  form{
+    font-family: Helvetica;
+    font-size: 150%;
+
+  }
+
+
+    input,select{
+      text-align: left;
+      font-family: Helvetica;
+      font-size: 95%;
+      margin:auto;
+    }
+    .submit1{
+       width: 40px;
+       margin: auto;
+       }
+    .submit2{
+        color: #418EC8;
+          }
+    .input{
+      width: 200px;
+    }
+    .form_margin{
+      padding: 5px;
+      padding-left: 20%;
+      width: 100%;
+      background-color: #F0F4FB;
+    }
+    .fill{
+      height: 5ex;
+      width: 120%;
+      background-color: #023774;
+      bottom: 0px;
+    }
+
+  </style>
+  </head>
+
+  <body>
+  <!--Navigation-->
+    <nav class="nav">
+      <a href="#Aboutme">HOME</a>
+      <a href="#ClassTable">Class Time Table</a>
+      <a href="#LabTable">Lab Time Table</a>
+      <a href="#MyHome">Home Photo</a>
+      <a href="#OtherPhoto">Other Photo</a>
+      <a href="#Search">Search</a>
+    </nav>
+  <div>
+
+          <h1 id="Aboutme">
+              About Myself
+          </h1>
+
+
+          <a href="http://www.ucc.ie" target="_blank">
+           <img src="ucc_logo.png"
+           alt="ucc_logo" class="logo"/>
+          </a>
+
+           <p>
+            My name is <span class="emp">Yuan Liu</span>, I'm from China. I was a landscape architect
+            and an urban planner, but now I am a postgraduate student of UCC.
+           </p>
+           <p>
+            My major is <a href="https://www.ucc.ie/en/ckr05/" target="_blank"><span class="emp">Interactive Media</span></a>,
+             which contains courses about programming and multimedia.
+             I had no programming experience before,
+             however, I have a lot fun by learning these courses.
+           </p>
+
+      <div class="centre">
+           <h1 id="ClassTable">
+              Class Time Table
+           </h1>
+
+    <!--class time table-->
+          <table>
+            <tr>
+              <th>Code</th>
+              <th>Title</th>
+              <th>Day</th>
+              <th>Time</th>
+              <th>Activity</th>
+              <th>Delivery</th>
+            </tr>
+          <!--CS6100-->
+            <tr>
+              <td>
+                <a class="highlight" href="https://www.ucc.ie/admin/registrar/modules/?mod=CS6100"
+                target="_blank">CS6100</a>
+              </td>
+              <td>Authoring</td>
+              <td>Monday<br>Monday</td>
+              <td>12:00<br>13:00</td>
+              <td>Lecture<br>Lecture</td>
+              <td>Online<br>Online</td>
+            </tr>
+
+         <!--CS6111-->
+            <tr>
+              <td>
+                <a class="highlight" href="https://www.ucc.ie/admin/registrar/modules/?mod=CS6111"
+                target="_blank">CS6111</a>
+              </td>
+              <td>3D Graphics and Modelling</td>
+              <td>Tuesday<br>Tuesday</td>
+              <td>16:00<br>17:00</td>
+              <td>Lecture<br>Lecture</td>
+              <td>Online<br>Online</td>
+            </tr>
+
+         <!--CS6103-->
+          <tr>
+             <td>
+               <a class="highlight" href="https://www.ucc.ie/admin/registrar/modules/?mod=CS6103"
+               target="_blank">CS6103</a>
+             </td>
+             <td>Audio and Sound Engineering</td>
+             <td>Monday<br>Monday</td>
+             <td>16:00<br>17:00</td>
+             <td>Lecture<br>Lecture</td>
+             <td>Online<br>Online</td>
+          </tr>
+
+        <!--CS6101-->
+          <tr>
+             <td>
+               <a class="highlight" href="https://www.ucc.ie/admin/registrar/modules/?mod=CS6101"
+               target="_blank">CS6101</a>
+             </td>
+             <td>Web Development for Digital Media</td>
+             <td>Wednesday<br>Wednesday</td>
+             <td>13:00<br>14:00</td>
+             <td>Lecture<br>Lecture</td>
+             <td>Online<br>Online</td>
+          </tr>
+
+        <!--CS6104-->
+          <tr>
+              <td>
+                <a class="highlight" href="https://www.ucc.ie/admin/registrar/modules/?mod=CS6104"
+                target="_blank">CS6104</a>
+              </td>
+              <td>Digital Video Capture and Packaging</td>
+              <td>Wednesday<br>Wednesday</td>
+              <td>17:00<br>18:00</td>
+              <td>Lecture<br>Lecture</td>
+              <td>Online<br>Online</td>
+            </tr>
+
+         <!--CS6102-->
+           <tr>
+              <td>
+                <a class="highlight" href="https://www.ucc.ie/admin/registrar/modules/?mod=CS6102"
+                target="_blank">CS6102</a>
+              </td>
+              <td>Graphics for Interactive Media</td>
+              <td>Friday<br>Friday</td>
+              <td>13:00<br>14:00</td>
+              <td>Lecture<br>Lecture</td>
+              <td>Online<br>Online</td>
+            </tr>
+          </table>
+
+          <h1  id="LabTable">
+             Lab Time Table
+          </h1>
+    <!--lab time table-->
+             <table>
+
+                <tr>
+                  <th>Code</th>
+                  <th>Title</th>
+                  <th>Day</th>
+                  <th>Time</th>
+                  <th>Activity</th>
+                  <th>Delivery</th>
+                </tr>
+                <!--CS6100-->
+                <tr>
+                  <td>
+                    <a class="highlight" href="https://www.ucc.ie/admin/registrar/modules/?mod=CS6100"
+                    target="_blank">CS6100</a>
+                  </td>
+                  <td>Authoring</td>
+                  <td>Wednesday</td>
+                  <td>11:00</td>
+                  <td>Lab</td>
+                  <td>Online</td>
+                </tr>
+
+          <!--CS6111-->
+                <tr>
+                  <td>
+                    <a class="highlight" href="https://www.ucc.ie/admin/registrar/modules/?mod=CS6111"
+                    target="_blank">CS6111</a>
+                  </td>
+                  <td>3D Graphics and Modelling</td>
+                  <td>Monday</td>
+                  <td>14:30</td>
+                  <td>Lab</td>
+                  <td>Online</td>
+                </tr>
+
+          <!--CS6103-->
+              <tr>
+                 <td>
+                   <a class="highlight" href="https://www.ucc.ie/admin/registrar/modules/?mod=CS6103"
+                   target="_blank">CS6103</a>
+                 </td>
+                 <td>Audio and Sound Engineering</td>
+                 <td>Tuesday</td>
+                 <td>14:30</td>
+                 <td>Lab</td>
+                 <td>Online</td>
+              </tr>
+
+          <!--CS6101-->
+              <tr>
+                 <td>
+                   <a class="highlight" href="https://www.ucc.ie/admin/registrar/modules/?mod=CS6101"
+                   target="_blank">CS6101</a>
+                 </td>
+                 <td>Web Development for Digital Media</td>
+                 <td>Thursday</td>
+                 <td>13:00</td>
+                 <td>Lab</td>
+                 <td>Online</td>
+              </tr>
+
+          <!--CS6104-->
+              <tr>
+                  <td>
+                    <a class="highlight" href="https://www.ucc.ie/admin/registrar/modules/?mod=CS6104"
+                    target="_blank">CS6104</a>
+                  </td>
+                  <td>Digital Video Capture and Packaging</td>
+                  <td>Thursday</td>
+                  <td>12:00</td>
+                  <td>Lab</td>
+                  <td>Online</td>
+                </tr>
+
+          <!--CS6102-->
+               <tr>
+                  <td>
+                    <a class="highlight" href="https://www.ucc.ie/admin/registrar/modules/?mod=CS6102"
+                    target="_blank">CS6102</a>
+                  </td>
+                  <td>Graphics for Interactive Media</td>
+                  <td>Tuesday<br>Friday</td>
+                  <td>11:00<br>15:00</td>
+                  <td>Lab</td>
+                  <td>Online<br>Online</td>
+                </tr>
+              </table>
+              </div>
+
+      <!--My Hometown-->
+              <h1 id="MyHome">
+                 My Hometown-Chengdu
+              </h1>
+              <img alt = "chengdu_logo" class="logo" src = "https://i.pinimg.com/originals/f7/18/77/f71877502a9e350b2058108bfc2b2b77.jpg"/>
+              <p>
+                <span class="emp">Chengdu</span> is located in central Sichuan.
+                The surrounding Chengdu Plain is known as the "Country of Heaven" and the "Land of Abundance".
+                Founded by the state of Shu prior to its incorporation into China,
+                Chengdu is unique as a major Chinese settlement
+                that has maintained its name mostly unchanged throughout the imperial, republican, and communist eras.
+              </p>
+              <div class="centre">
+              <img alt="chengdu_map" class="imgWidth" src="https://www.chinadiscovery.com/assets/images/chengdu/chengdu-map/chengdu-china-map.jpg"/>
+              </div>
+
+             <img alt="heritage_logo" class="logo" src="https://1844.img.pp.sohu.com.cn/images/blog/2010/1/7/16/17/126b820e7e9g215.jpg"/>
+              <p>
+                It was the capital of Liu Bei's Shu Han during the <span class="emp">Three Kingdoms Era</span>,
+                 as well as several other local kingdoms during the Middle Ages.
+                During World War II, refugees from eastern China fleeing from the Japanese settled in Chengdu.
+                After the war, Chengdu's importance as a link between Eastern and Western China expanded,
+                with railways built to Chongqing in 1952, and Kunming and Tibet afterwards.
+                In the 1960s, Chengdu became an important centre of China's national defense industry.
+                Chengdu is now one of the most important
+                economic, financial, commercial, cultural, transportation, and communication centers in Western China.
+              </p>
+
+
+
+              <!--Dujiangyan-->
+              <div class="centre">
+              <img alt="dujiangyan_pic" class="imgWidth" src="https://www.topchinatravel.com/pic/city/chengdu/attractions/Dujiangyan-Irrigation-System-13.jpg"/>
+              <ul>
+                <li>The site of <span class="emp">Dujiangyan</span>, an ancient irrigation system, is designated as a World Heritage Site.</li>
+              </ul>
+
+
+              <!--JinRiver-->
+              <img alt="jinriver_pic" class="imgWidth" src="https://scholarlykitchen.sspnet.org/wp-content/uploads/2020/02/iStock-510901343.jpg"/>
+              <ul>
+                <li>The Jin River flows through the city.</li>
+              </ul>
+              </div>
+
+              <!--Economy-->
+              <p>Its economy is diverse, characterized by the machinery, automobile, medicine, food, and information technology industries.
+                Chengdu Shuangliu International Airport, a hub of Air China and Sichuan Airlines,
+                is one of the 30 busiest airports in the world, and the Chengdu railway station is one of the six biggest in China.
+                Chengdu also hosts many international companies and more than 12 consulates; more than 270 Fortune 500 companies have established branches in Chengdu.
+              </p>
+
+            <!--FISU-->
+              <div class="centre">
+              <img alt="FISU_pic" class="imgWidth" src="https://i.ytimg.com/vi/TZHIJrhmStw/hqdefault.jpg"/>
+              <ul>
+              <li>Chengdu will host the <span class="emp">FISU Summer World University Games</span> in 2021, an international multi-sport event.
+                <br>It is considered one of the most livable cities in China.
+              </li>
+              </ul>
+
+              <!--Gastronomy-->
+              </div>
+              <img alt="gastronomy_logo" class="logo" src="https://creativegastronomy.com/ccn/wp-content/uploads/2017/12/Bildschirmfoto-2017-12-18-um-22.05.19-300x140.png"/>
+              <p>Chengdu's culture largely reflects that of its province, Sichuan;
+                in 2011, it was recognized by UNESCO as a <span class="emp">city of gastronomy</span>.
+                It's not hard to see why, when there are restaurants
+                and street vendors serving mouth-wateringly delicious dishes
+                and snacks on pretty much every street.
+                It really is a place where food is taken seriously and done well.
+              </p>
+              <div class="centre">
+              <img alt="hotpot_pic" class="imgWidth" src="https://i1.wp.com/blog.themalamarket.com/wp-content/uploads/2017/10/JP-hotpot-1.jpg?ssl=1"/>
+              <ul>
+                <li>Hotpot is one of the most typical food in Chengdu.</li>
+              </ul>
+
+            <!--Panda-->
+             <img alt="panda_logo" class="logo" src="https://media-exp1.licdn.com/dms/image/C560BAQH3XX1Gk8PeIw/company-logo_200_200/0?e=2159024400&v=beta&t=Bj0JjlenXVYS_PvxM5Z_zAOVxcttIMSi3Jdpefwm7as"/>
+             <p>Sichuan province is the main habitat of <span class="emp">giant panda</span>.
+               <span class="emp">Chengdu Research Base of Giant Panda Breeding</span>,
+               or simply <span class="emp">Chengdu Panda Base</span>,
+               is a non-profit research and breeding facility for giant pandas and other rare animals.
+               It is located in Chengdu, Sichuan, China.
+              Entrance of the Chengdu Research Base of Giant Panda Breeding
+              Chengdu Research Base of Giant Panda Breeding Eingangsschild
+                Chengdu Panda Base was founded in 1987.
+                It started with 6 giant pandas that were rescued from the wild.
+                By 2008, it had 124 panda births,
+                and the captive panda population has grown to 83.
+
+                Its stated goal is to "be a world-class research facility,
+                 conservation education center,
+                 and international educational tourism destination."</p>
+             </div>
+              <div class="centre">
+              <img alt="panda_pic" class="imgWidth" src="http://p5.img.cctvpic.com/photoworkspace/2019/07/23/2019072314352481403.jpg"/>
+              <ul>
+              <li>
+               Giant panda in Chengdu Panda Base.
+              </li>
+              </ul>
+              </div>
+
+            <!--Other Photo-->
+              <h1 id="OtherPhoto">
+                  Other Photos about My Life
+              </h1>
+              <div class="centre">
+                <img alt="otherphoto1" class="imgWidth" src="otherphoto1.jpg"/>
+                <img alt="otherphoto2" class="imgWidth" src="otherphoto2.jpg"/>
+                <img alt="otherphoto3" class="imgWidth" src="otherphoto3.jpg"/>
+                <img alt="otherphoto4" class="imgWidth" src="otherphoto4.jpg"/>
+                <img alt="otherphoto5" class="imgWidth" src="otherphoto5.jpg"/>
+                <img alt="otherphoto6" class="imgWidth" src="otherphoto6.jpg"/>
+              </div>
+
+             <!--Search-->
+              <h1 id = "Search">
+                  Search
+              </h1>
+
+
+              <form action="https://duckduckgo.com" target="_blank">
+
+
+               <!--Region-->
+                <div class="form_margin">
+                 Region:
+
+                     <label for="ie">
+                       <img src="https://icons.iconarchive.com/icons/wikipedia/flags/1024/IE-Ireland-Flag-icon.png"
+                       alt="ie_logo" class="flag_logo"/>
+                       Ireland
+                     </label>
+                   <input checked type= "radio" name="kl" value="ie-en" id="ie">
+
+
+                     <label for="cn">
+                       <img src="https://cdn1.iconfinder.com/data/icons/flags-36/512/China_Country_flag-512.png"
+                       alt="cn_logo" class="flag_logo"/>
+                       China
+                     </label>
+                     <input  type= "radio" name="kl" value="cn-zh" id="cn">
+
+                     <label for="de">
+                       <img src="https://www.shareicon.net/data/2017/01/17/871963_flag_512x512.png"
+                       alt="de_logo" class="flag_logo"/>
+                       Germany
+                     </label>
+                     <input  type= "radio" name="kl" value="de-de" id="de">
+                 </div>
+
+                <!--Theme-->
+                <div class="form_margin">
+                  <label for="theme">Theme: </label>
+                  <select  name="kae" id="theme">
+                      <option value="-1">Default</option>
+                      <option value="d">Dark</option>
+                      <option value="r">Retro</option>
+                      <option value="c">Contrast</option>
+                      <option value="t">Teminal</option>
+                  </select><br>
+                </div >
+
+                <!--Safe search-->
+                <div class="form_margin">
+                  <label for="SafeSearch">Safe search: </label>
+                  <label for="on"> On</label>
+                  <input checked type = "radio" name="kp" value="1" id="on">
+                  <label for="moderate"> Moderate</label>
+                  <input type = "radio" name="kp" value="-1" id="moderate">
+               </div>
+
+               <!--Search For-->
+                <div class="form_margin">
+
+                  <input type="text" name="q" placeholder="Search"  size="50" required>
+                  <input type="image" src="https://static.thenounproject.com/png/101791-200.png"
+                  alt="submit" class="submit1">
+                </div>
+                <div class="form_margin">
+                  <input type="reset" value="Clear" class="submit2">
+                </div>
+              </form>
+              <div class="fill">
+              </div>
+
+  </div>
+ </body>
+</html>
